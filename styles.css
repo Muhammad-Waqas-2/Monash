@@ -1,72 +1,487 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Condensed, sans-serif;
+}
+
+.bar1 {    
+  background-color: #006dae;    
+  color: white;        
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.left img {
+  height: 25px; 
+  width: 30px;
+}
+
+.mid {
+  align-items: center; 
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.right {
+  align-items: center; 
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.right li {
+  display: flex;
+  align-items: center; 
+}
+
+.right img {
+  height: 36px; 
+  width: 36px; 
+  margin-right: 0.5rem; 
+}
+
+.bar2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.left2 img {
+  height: 50px;
+  width: auto;
+}
+
+.mid2 {
+  align-items: center; 
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: #000;
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bar1 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
   }
-  body{
-      background-color: white;
-      font-family:Condensed, sans-serif;
+  .left {
+      gap: 1rem;
   }
-  .bar1 {    
-      background-color: #006dae;    
-      color: white;        
-      display:flex;
-      align-items: center; 
-      padding: 0.5rem 1rem;
+  .mid {
+      display: none; /* Hide the middle menu on smaller screens */
   }
-  .left{
-      display: flex;
-      align-items: center;
-      gap: 2.4rem;
+  .right {
+      margin: 0; 
+      gap: 0.5rem;
   }
-  .left img{
-    height: 25px; 
-    width: 30px;
+}
+
+@media (max-width: 480px) {
+  .bar2 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
   }
-  .mid{
-    align-items: center; 
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-    margin-left: 6.1rem;
-  }
-  .right{
-    align-items: center; 
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin-left:8rem;
-  margin-bottom:0.4rem;
-  }
-  .right li {
-    display: flex;
-    align-items: center; 
+  .mid2 {
+      flex-wrap: wrap;
+      gap: 1rem;
   }
   .right img {
-    height: 36px; 
-    width: 36px; 
-    margin-right: 0.5rem; 
+      height: 28px;
+      width: 28px;
   }
-  .search-bar{
-    height:0.5rem;
-    width:0.5rem;
-    
+}
+
+
+/* Additional styles for the CARDS section */
+.container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr)); /* 3 equal-width columns */
+  gap: 1.5rem; /* Space between the cards */
+  justify-content: center; /* Center the grid */
+  padding: 1rem; /* Add padding inside the container */
+  max-width: 1200px; /* Limit the total width of the grid */
+  margin: 0 auto; /* Center the container itself */
+}
+
+
+@media (max-width: 768px) {
+  .info-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+      gap: 1rem;
   }
-  .bar2{
-    margin-top: 2.5rem;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    
+}
+
+@media (max-width: 480px) {
+  .info-cards {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 1rem;
   }
-  .mid2{
+}
+.card {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+  background-color: white;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-content {
+  flex: 1; /* Allow content to take available space */
+}
+
+.card-image {
+  width: 4.7rem; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 1rem; /* Space between text and image */
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  box-shadow: 
+  0 6px 8px rgba(51, 50, 50, 0.3), 
+   -2px 2px 2px rgba(39, 39, 39, 0.1),
+   2px 2px 2px rgba(39, 39, 39, 0.1); 
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #006dae;
+  font-weight: bold;
+  font-size: 19.2px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card p {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+      font-size: 1.5rem;
+  }
+
+  .intro p {
+      font-size: 1rem;
+  }
+
+  .card {
+      width: 100%;
+  }
+}
+/* Add these styles at the end of your existing CSS */
+
+/* Styles for the new Monash change section */
+.monash-change-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  border: 1px solid #ddd;
+  margin-top: 2rem;
+  max-width: 73rem; /* Match the max width of the cards */
+  margin: 0.8rem auto; /* Center the section horizontally and add vertical spacing */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* Restrict the content width to match the grid cards */
+.text-content, .image-content {
+  max-width: 50%; /* Ensure content stays proportional */
+  flex: 1; /* Ensure both sections share equal space */
+  padding: 0 1rem; /* Add consistent inner spacing */
+}
+
+/* Text content styles */
+.text-content {
+  text-align: left; /* Align text to the left */
+  margin-left: 1.4rem;
+}
+
+.text-content h2 {
+  font-size: 30.4px;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-content p {
+  margin-bottom: 2rem;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #006dae;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Image content styles */
+.image-content {
+  position: relative;
+}
+
+.image-content img {
+  width: 100%;
+  margin-left: 1.1rem;
+}
+
+/* Play icon styles */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-icon::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 12px 20px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Responsive design for the Monash change section */
+@media (max-width: 1024px) {
+  .monash-change-section {
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start; /* Align items to the left */
+      text-align: left; /* Ensure text is left-aligned */
+  }
+
+  .text-content, .image-content {
+      max-width: 100%; /* Allow full width for content */
+      padding: 0; /* Remove padding for better fit */
+  }
+
+  .image-content img {
+      margin-left: 0; /* Remove unnecessary left margin for images */
+  }
+
+  .play-icon {
+      width: 40px;
+      height: 40px; /* Further reduce play icon size for smaller screens */
+  }
+
+  .text-content h2 {
+      font-size: 1.25rem; /* Reduce heading size for smaller screens */
+  }
+
+  .text-content p {
+      font-size: 0.9rem; /* Adjust paragraph text size */
+  }
+
+  .button {
+      font-size: 0.85rem; /* Adjust button size for better fit */
+      padding: 0.5rem 1rem;
+  }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 768px) {
+  .play-icon {
+      width: 35px;
+      height: 35px; /* Further reduce play icon size for smaller screens */
+  }
+}
+
+/* Monash LENS */
+/* Styles for the new Monash Lens section */
+.monash-lens-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  border: 1px solid #ddd;
+  margin-top: 2rem;
+  max-width: 73rem; /* Match the max width of the previous sections */
+  margin: 1.5rem auto; /* Center the section horizontally and add vertical spacing */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; /* Add shadow effect */
+}
+
+/* Restrict the content width to match the grid cards */
+.text-content, .image-content {
+  max-width: 50%; /* Ensure content stays proportional */
+  flex: 1; /* Ensure both sections share equal space */
+  padding: 0 1rem; /* Add consistent inner spacing */
+}
+
+/* Text content styles */
+/* Text content styles */
+.text-content-lens {
+  text-align: left; /* Align text to the left */
+  margin-left: 1.4rem;
+}
   
-    align-items: center; 
-    list-style: none;
-    display: flex;
-    gap: 2.8rem;
-    margin-left: 10.3rem;
-    color: #000;
-      font-family: Roboto Condensed, sans-serif;
-      font-weight: 700;
-      line-height: 1.2;
+
+.text-content-lens h2 {
+  font-size: 30.4px;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  color: #006dae;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-content-lens p {
+  margin-bottom: 2rem;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Image content styles */
+.image-content-lens {
+  position: relative;
+}
+
+.image-content-lens img {
+  width: 100%;
+}
+
+/* Responsive design for the Monash Lens section */
+@media (max-width: 1024px) {
+  .monash-lens-section {
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start; /* Align items to the left */
+      text-align: left; /* Ensure text is left-aligned */
   }
+
+  .text-content, .image-content {
+      max-width: 100%; /* Allow full width for content */
+      padding: 0; /* Remove padding for better fit */
+  }
+
+  .image-content img {
+      margin-left: 0; /* Remove unnecessary left margin for images */
+  }
+}
+
+/*IMAGE*/
+.responsive-image {
+  width: 100%; /* Make the image take the full width of its container */
+}
+.owl-section {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  border: 1px solid #ddd; /* Border similar to other sections */
+  margin-top: 2rem; /* Space above the section */
+  max-width: 73rem; /* Match the max width of the cards */
+  margin: 0.8rem auto; /* Center the section horizontally */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; /* Add shadow */
+}
+
+/* Image content styles */
+.image-content-owl {
+  flex: 1; /* Allow image content to take up half of the section */
+}
+
+.image-content-owl img {
+  width: 100%; /* Ensure image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Text content styles */
+.text-content-owl {
+  flex: 1; /* Allow text content to take up half of the section */
+  padding: 1rem; /* Add some padding around the text */
+  padding-left: 2.5rem;
+  text-align: left; /* Align text to the left */
+}
+
+.text-content-owl h2 {
+  font-size: 21px;
+  font-weight: bolder;
+  margin-bottom: 1.2rem;
+  color: #006dae;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-content-owl p {
+  margin-bottom: 10rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.latest-news-heading {
+  color: black; /* Black text color */
+  text-align: center; /* Center the heading text */
+  margin-top: 3rem; /* Space above the heading */
+  margin-bottom: 3rem;
+  font-family: 'Roboto Condensed', sans-serif; /* Consistent font */
+  font-size: 30.4px; /* Set font size for the heading */
+}
