@@ -463,12 +463,13 @@ margin-left: 5px;
 
 
 
+/* Footer Styling */
 footer {
-  margin-left: -32px;
-    margin-right: -32px;
-    margin-bottom: -32px;
-    background-color: #333;
-    color: #ddd;
+  background-color: #333;
+  color: #ddd;
+  padding: 40px 0; /* Increase padding for larger height */
+  margin-top: 30px;
+  font-size: 16px; /* Make the font size larger */
 }
 
 .footer-container {
@@ -477,15 +478,16 @@ footer {
   max-width: 1200px;
 }
 
+/* Footer Social Section */
 .footer-social {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Increase space below the social icons */
 }
 
 .footer-social i {
   color: #ddd;
-  margin: 0 10px;
-  font-size: 20px;
+  margin: 0 20px; /* Increase spacing between social icons */
+  font-size: 30px; /* Increase icon size */
   cursor: pointer;
 }
 
@@ -493,26 +495,30 @@ footer {
   color: #fff;
 }
 
+/* Footer Acknowledgment */
 .footer-acknowledgment {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 14px;
+  margin-bottom: 30px; /* Increase spacing below acknowledgment */
+  font-size: 18px; /* Increase font size */
 }
 
 .footer-acknowledgment a {
   color: #0af;
   text-decoration: none;
+  font-weight: bold; /* Bold the acknowledgment link */
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increase space between links section */
+  border-bottom: 0.5px solid #ddd;
+  padding-bottom: 20px; /* Add some padding below the section */
 }
 
 .footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
+  margin-bottom: 15px; /* Increase space below the section titles */
+  font-size: 18px; /* Increase font size */
   color: #fff;
 }
 
@@ -522,24 +528,27 @@ footer {
 }
 
 .footer-section li {
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Increase spacing between list items */
 }
 
 .footer-section a {
   color: #ddd;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px; /* Increase font size */
 }
 
 .footer-section a:hover {
   text-decoration: underline;
 }
 
+/* Footer Info */
 .footer-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  font-size: 13px;
+  margin-bottom: 40px; /* Increase space between sections */
+  font-size: 16px; /* Increase font size */
+  border-bottom: 0.5px solid #ddd;
+  padding-bottom: 20px; /* Add some padding below the section */
 }
 
 .footer-info div {
@@ -547,14 +556,15 @@ footer {
 }
 
 .footer-bottom {
+  display: grid;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px; /* Increase font size */
 }
 
 .footer-bottom a {
   color: #ddd;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 10px; /* Increase space between footer links */
 }
 
 .footer-bottom a:hover {
@@ -562,5 +572,13 @@ footer {
 }
 
 .footer-bottom p {
-  margin-top: 10px;
+  margin-top: 20px; /* Add more space at the top of the bottom paragraph */
+}
+
+/* Adjusting the footer for larger height */
+footer {
+  margin-right: -32px;
+    padding: 60px 0;
+    margin-left: -32px;
+    margin-bottom: -32px;
 }
