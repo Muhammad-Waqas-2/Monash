@@ -9,11 +9,11 @@ body {
   font-family: Condensed, sans-serif;
 }
 
-.bar1 {    
-  background-color: #006dae;    
-  color: white;        
+.bar1 {
+  background-color: #006dae;
+  color: white;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
@@ -25,19 +25,19 @@ body {
 }
 
 .left img {
-  height: 25px; 
+  height: 25px;
   width: 30px;
 }
 
 .mid {
-  align-items: center; 
+  align-items: center;
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
 .right {
-  align-items: center; 
+  align-items: center;
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -45,15 +45,16 @@ body {
 
 .right li {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .right img {
-  height: 36px; 
-  width: 36px; 
-  margin-right: 0.5rem; 
+  height: 36px;
+  width: 36px;
+  margin-right: 0.5rem;
 }
-.bar2{
+
+.bar2 {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
@@ -61,12 +62,11 @@ body {
   font-family: Roboto Condensed, sans-serif;
   font-weight: 790;
   line-height: 1.2;
-    
 }
-.left2
-{
-margin-top: 10px;
-margin-left: 5px;
+
+.left2 {
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .my-button {
@@ -83,67 +83,68 @@ margin-left: 5px;
   transition: background-color 0.5s, color;
   margin-left: 20rem;
 }
-  .my-button:hover {
-    background-color: #006dae; 
-    color: white; 
-  }
+
+.my-button:hover {
+  background-color: #006dae;
+  color: white;
+}
 
 .mid2 {
   display: flex;
-  gap: 1rem; 
-  list-style:none;
+  gap: 1rem;
+  list-style: none;
   margin-left: 18rem;
   align-items: center;
 }
+
 .mid2 > li {
-  position: relative; /* To position the dropdown menu correctly */
+  position: relative;
 }
 
-.mid2 > li > a { /* Apply styles only to top-level links */
+.mid2 > li > a {
   text-decoration: none;
-  color: #000; /* Default text color */
+  color: #000;
   padding: 0.5rem 1rem;
   display: block;
-  border-bottom: 6px solid transparent; /* Invisible border for hover effect */
-  transition: border-bottom 0.3s ease; /* Smooth transition */
+  border-bottom: 6px solid transparent;
+  transition: border-bottom 0.3s ease;
 }
 
 .mid2 > li > a:hover {
-  border-bottom: 6px solid #006dae; /* Blue underline on hover */
+  border-bottom: 6px solid #006dae;
 }
 
-/* Dropdown menu styles */
 .dropdown {
-  display: none; /* Hide dropdown by default */
-  position: absolute; /* Position relative to parent */
-  top: 100%; /* Place below parent item */
- list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  list-style: none;
   padding: 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
   background-color: aliceblue;
 }
 
 .dropdown li a {
   font-weight: 150;
-  color: #000000; /* Dropdown text color */
+  color: #000000;
   text-decoration: none;
   display: block;
-  white-space: nowrap; /* Prevent text wrapping */
-  margin-right: 7rem; 
-  font-size:large;
+  white-space: nowrap;
+  margin-right: 7rem;
+  font-size: large;
   padding: 10px 15px;
 }
 
 .dropdown li a:hover {
   text-decoration: underline;
-  color: #004a80; /* Darker blue hover color */
+  color: #004a80;
 }
 
-/* Show dropdown on hover */
 .mid2 > li:hover .dropdown {
   display: block;
 }
+
 .headerbody {
   background-image: url('/Images/hero\ image.jpeg');
   background-size: cover;
@@ -153,7 +154,6 @@ margin-left: 5px;
   color: #fff;
   position: relative;
   height: 35vw;
-  
 }
 
 .headerbody1 {
@@ -166,7 +166,6 @@ margin-left: 5px;
 }
 
 .accept-offer {
-
   color: #f5f5f5;
   text-decoration: none;
   font-weight: bold;
@@ -180,9 +179,6 @@ margin-left: 5px;
   border-radius: 5px;
   margin-top: 5rem;
 }
-
-
-
 
 .container {
   padding: 2rem;
@@ -209,18 +205,18 @@ margin-left: 5px;
 
 .info-cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr)); /* 3 equal-width columns */
-  gap: 1.5rem; /* Space between the cards */
-  justify-content: center; /* Center the grid */
-  padding: 1rem; /* Add padding inside the container */
-  max-width: 1200px; /* Limit the total width of the grid */
-  margin: 0 auto; /* Center the container itself */
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
   background-color: white;
   padding: 1rem;
@@ -231,21 +227,18 @@ margin-left: 5px;
 }
 
 .card-content {
-  flex: 1; /* Allow content to take available space */
+  flex: 1;
 }
 
 .card-image {
-  width: 4.7rem; /* Set a fixed width for the images */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 1rem; /* Space between text and image */
+  width: 4.7rem;
+  height: auto;
+  margin-left: 1rem;
   margin-bottom: 2rem;
 }
 
 .card:hover {
-  box-shadow: 
-  0 6px 8px rgba(51, 50, 50, 0.3), 
-   -2px 2px 2px rgba(39, 39, 39, 0.1),
-   2px 2px 2px rgba(39, 39, 39, 0.1); 
+  box-shadow: 0 6px 8px rgba(51, 50, 50, 0.3), -2px 2px 2px rgba(39, 39, 39, 0.1), 2px 2px 2px rgba(39, 39, 39, 0.1);
 }
 
 .card h3 {
@@ -262,29 +255,25 @@ margin-left: 5px;
   font-size: 15px;
 }
 
-
-/* Styles for the new Monash change section */
 .monash-change-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   border: 1px solid #ddd;
   margin-top: 2rem;
-  max-width: 73rem; /* Match the max width of the cards */
-  margin: 0.8rem auto; /* Center the section horizontally and add vertical spacing */
+  max-width: 73rem;
+  margin: 0.8rem auto;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-/* Restrict the content width to match the grid cards */
 .text-content, .image-content {
-  max-width: 50%; /* Ensure content stays proportional */
-  flex: 1; /* Ensure both sections share equal space */
-  padding: 0 1rem; /* Add consistent inner spacing */
+  max-width: 50%;
+  flex: 1;
+  padding: 0 1rem;
 }
 
-/* Text content styles */
 .text-content {
-  text-align: left; /* Align text to the left */
+  text-align: left;
   margin-left: 1.4rem;
 }
 
@@ -302,7 +291,6 @@ margin-left: 5px;
   font-family: 'Roboto', sans-serif;
 }
 
-/* Button styles */
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -313,7 +301,6 @@ margin-left: 5px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* Image content styles */
 .image-content {
   position: relative;
 }
@@ -323,7 +310,6 @@ margin-left: 5px;
   margin-left: 1.1rem;
 }
 
-/* Play icon styles */
 .play-icon {
   position: absolute;
   top: 50%;
@@ -352,28 +338,24 @@ margin-left: 5px;
 .monash-lens-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   border: 1px solid #ddd;
   margin-top: 2rem;
-  max-width: 73rem; /* Match the max width of the previous sections */
-  margin: 1.5rem auto; /* Center the section horizontally and add vertical spacing */
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; /* Add shadow effect */
+  max-width: 73rem;
+  margin: 1.5rem auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-/* Restrict the content width to match the grid cards */
 .text-content, .image-content {
-  max-width: 50%; /* Ensure content stays proportional */
-  flex: 1; /* Ensure both sections share equal space */
-  padding: 0 1rem; /* Add consistent inner spacing */
+  max-width: 50%;
+  flex: 1;
+  padding: 0 1rem;
 }
 
-/* Text content styles */
-/* Text content styles */
 .text-content-lens {
-  text-align: left; /* Align text to the left */
+  text-align: left;
   margin-left: 1.4rem;
 }
-  
 
 .text-content-lens h2 {
   font-size: 30.4px;
@@ -389,7 +371,6 @@ margin-left: 5px;
   font-family: 'Roboto', sans-serif;
 }
 
-/* Image content styles */
 .image-content-lens {
   position: relative;
 }
@@ -399,35 +380,34 @@ margin-left: 5px;
 }
 
 .responsive-image {
-  width: 100%; /* Make the image take the full width of its container */
-}
-.owl-section {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the left */
-  border: 1px solid #ddd; /* Border similar to other sections */
-  margin-top: 2rem; /* Space above the section */
-  max-width: 73rem; /* Match the max width of the cards */
-  margin: 0.8rem auto; /* Center the section horizontally */
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; /* Add shadow */
+  width: 100%;
 }
 
-/* Image content styles */
+.owl-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #ddd;
+  margin-top: 2rem;
+  max-width: 73rem;
+  margin: 0.8rem auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
 .image-content-owl {
-  flex: 1; /* Allow image content to take up half of the section */
+  flex: 1;
 }
 
 .image-content-owl img {
-  width: 100%; /* Ensure image takes full width of its container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
-/* Text content styles */
 .text-content-owl {
-  flex: 1; /* Allow text content to take up half of the section */
-  padding: 1rem; /* Add some padding around the text */
+  flex: 1;
+  padding: 1rem;
   padding-left: 2.5rem;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .text-content-owl h2 {
@@ -445,31 +425,20 @@ margin-left: 5px;
 }
 
 .latest-news-heading {
-  color: black; /* Black text color */
-  text-align: center; /* Center the heading text */
-  margin-top: 3rem; /* Space above the heading */
+  color: black;
+  text-align: center;
+  margin-top: 3rem;
   margin-bottom: 3rem;
-  font-family: 'Roboto Condensed', sans-serif; /* Consistent font */
-  font-size: 30.4px; /* Set font size for the heading */
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30.4px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Footer Styling */
 footer {
   background-color: #333;
   color: #ddd;
-  padding: 40px 0; /* Increase padding for larger height */
+  padding: 40px 0;
   margin-top: 30px;
-  font-size: 16px; /* Make the font size larger */
+  font-size: 16px;
 }
 
 .footer-container {
@@ -478,16 +447,15 @@ footer {
   max-width: 1200px;
 }
 
-/* Footer Social Section */
 .footer-social {
   text-align: center;
-  margin-bottom: 20px; /* Increase space below the social icons */
+  margin-bottom: 20px;
 }
 
 .footer-social i {
   color: #ddd;
-  margin: 0 20px; /* Increase spacing between social icons */
-  font-size: 30px; /* Increase icon size */
+  margin: 0 20px;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -495,30 +463,29 @@ footer {
   color: #fff;
 }
 
-/* Footer Acknowledgment */
 .footer-acknowledgment {
   text-align: center;
-  margin-bottom: 30px; /* Increase spacing below acknowledgment */
-  font-size: 18px; /* Increase font size */
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .footer-acknowledgment a {
   color: #0af;
   text-decoration: none;
-  font-weight: bold; /* Bold the acknowledgment link */
+  font-weight: bold;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px; /* Increase space between links section */
+  margin-bottom: 30px;
   border-bottom: 0.5px solid #ddd;
-  padding-bottom: 20px; /* Add some padding below the section */
+  padding-bottom: 20px;
 }
 
 .footer-section h4 {
-  margin-bottom: 15px; /* Increase space below the section titles */
-  font-size: 18px; /* Increase font size */
+  margin-bottom: 15px;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -528,27 +495,26 @@ footer {
 }
 
 .footer-section li {
-  margin-bottom: 10px; /* Increase spacing between list items */
+  margin-bottom: 10px;
 }
 
 .footer-section a {
   color: #ddd;
   text-decoration: none;
-  font-size: 16px; /* Increase font size */
+  font-size: 16px;
 }
 
 .footer-section a:hover {
   text-decoration: underline;
 }
 
-/* Footer Info */
 .footer-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px; /* Increase space between sections */
-  font-size: 16px; /* Increase font size */
+  margin-bottom: 40px;
+  font-size: 16px;
   border-bottom: 0.5px solid #ddd;
-  padding-bottom: 20px; /* Add some padding below the section */
+  padding-bottom: 20px;
 }
 
 .footer-info div {
@@ -558,13 +524,13 @@ footer {
 .footer-bottom {
   display: grid;
   text-align: center;
-  font-size: 14px; /* Increase font size */
+  font-size: 14px;
 }
 
 .footer-bottom a {
   color: #ddd;
   text-decoration: none;
-  margin: 0 10px; /* Increase space between footer links */
+  margin: 0 10px;
 }
 
 .footer-bottom a:hover {
@@ -572,13 +538,12 @@ footer {
 }
 
 .footer-bottom p {
-  margin-top: 20px; /* Add more space at the top of the bottom paragraph */
+  margin-top: 20px;
 }
 
-/* Adjusting the footer for larger height */
 footer {
   margin-right: -32px;
-    padding: 60px 0;
-    margin-left: -32px;
-    margin-bottom: -32px;
+  padding: 60px 0;
+  margin-left: -32px;
+  margin-bottom: -32px;
 }
